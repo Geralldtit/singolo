@@ -4,6 +4,61 @@ html {
 
 body {
   font-size: 1.8rem;
-  font-family: 'Lato', Verdana, sans-serif;
+  font-family: 'Lato', Arial, sans-serif;
 }
 
+.wrapper {
+  width: 960px;
+}
+
+header {
+  width: 960px;
+  height: 89px;
+  background-color: #2d303a;
+}
+
+header > .wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 6px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: left;
+}
+
+.remark {
+  color: #f06c64;
+}
+
+nav {
+  width: 380px;
+  height: 100%;
+}
+
+.header-navigation .navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 8px;
+  list-style: none;
+}
+
+.navigation li {
+  font-size: 12px;
+  line-height: 6px;
+  font-family: "Lato";
+  font-weight: 700;
+  text-align: left;
+  color: #ffffff;
+}
+
+.navigation li:first-child {
+  color: #f06c64;
+}

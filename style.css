@@ -25,6 +25,7 @@ header {
   width: 100%;
   height: 89px;
   background-color: #2d303a;
+  margin-bottom: 6px;
 }
 
 .header-underline {
@@ -104,26 +105,30 @@ nav {
 
 .slider {
   width: 100%;
-  height: 600px;
+  height: 594px;
   background-color: #f06c64;
-  z-index: 3;
+  margin-bottom: 6px;
 }
 
 .slider > .wrapper {
-  padding-top: 6px;
   position: relative;
+}
+
+.prev:hover, .next:hover {
+  transform: scale(1.4);
 }
 
 .prev {
   position: absolute;
   width: 16px;
   height: 27px;
-  top: 287px;
+  top: 281px;
+  left: 42px;
 }
 
 .phone-vertical {
   position: absolute;
-  top: 59px;
+  top: 53px;
   left: 112px;
   width: 240px;
   height: 484px;
@@ -131,8 +136,8 @@ nav {
 
 .phone-horizontal {
   position: absolute;
-  top: 180px;
-  right: 112px;
+  top: 174px;
+  right: 111px;
   width: 483px;
   height: 240px;
 }
@@ -141,23 +146,80 @@ nav {
   position: absolute;
   width: 16px;
   height: 27px;
-  top: 287px;
+  top: 281px;
   right: 40px;
 }
 
 .slider-underline {
-  height: 15px;
+  height: 6px;
   position: relative;
   background-color: #ea676b;
-  z-index: 2;
-  top: -9px;
+  /* background-color: green; */
 }
 
 .services {
   width: 100%;
-  height: 500px;
+  height: 495;
+  color: #767e9e;
+  background-color: #f2f2f2;
+}
+
+.services > .wrapper {
+  flex-direction: column;
+}
+
+.services-header {
+  font-weight: 900;
+  margin-block-start: 0;
+  margin-block-end: 19px;
+  padding-block-start: 60px;
+  font-size: 3rem;
+}
+
+.service-text {
+  margin-top: 0px;
+  text-align: justify;
+  font-size: 1.75rem;
+  line-height: 3rem;
+  margin-bottom: 39px;
 }
 
 .layout-3-column {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.item {
+  display: flex;
+  flex-basis: 33%;
+  margin-bottom: 30px;
+}
+
+.layout-3-column h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  text-align: justify;
+  letter-spacing: -0.013rem;
+}
+
+.layout-3-column p {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+}
+
+.tool-icon {
+  padding-top: 5px;
+  margin-right: 17px;
+}
+
+.services-underline {
+  height: 6px;
+  position: relative;
+  background-color: #ffffff;
+
 }

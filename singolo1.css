@@ -65,6 +65,7 @@ nav {
    display: flex;
 } */
 
+
 .header-navigation .navigation {
   display: flex;
   justify-content: space-between;
@@ -179,9 +180,10 @@ nav {
 .service-text {
   margin-top: 0px;
   text-align: justify;
-  font-size: 1.75rem;
+  font-size: 1.8rem;
   line-height: 3rem;
-  margin-bottom: 39px;
+  margin-bottom: 40px;
+  font-weight: 300;
 }
 
 .layout-3-column {
@@ -196,7 +198,7 @@ nav {
 .item {
   display: flex;
   flex-basis: 33%;
-  margin-bottom: 37px;
+  margin-bottom: 27px;
   margin-right: -10px;
 }
 
@@ -206,17 +208,22 @@ nav {
   text-align: justify;
   letter-spacing: -0.013rem;
   text-transform: capitalize;
+  font-weight: 900;
 }
 
 .layout-3-column p {
   margin: 0;
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 2.2rem;
+  padding-top: 8px;
+  text-align: justify;
+  padding-right: 10px;
+
 }
 
 .tool-icon {
-  padding-top: 5px;
+  padding-top: 4px;
   margin-right: 18px;
 }
 

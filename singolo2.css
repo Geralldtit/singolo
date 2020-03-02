@@ -46,7 +46,6 @@ h1, h2, h3 {
 
 .portfolio {
   background-color: #2d303a;
-  /* height: 870px; */
   color: #767e9e;
 }
 
@@ -113,14 +112,12 @@ h1, h2, h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* flex-basis: 22%; */
   position: relative;
   overflow: hidden;
   width: 220px;
   height: 187px;
   margin-right: 20px;
   margin-bottom: 20px;
-  /* padding-right: 20px;*/
 }
 
 .item:nth-child(4n){
@@ -287,4 +284,30 @@ h1, h2, h3 {
   text-align: justify;
   padding-top: 11px;
   letter-spacing: -0.07px;
+}
+
+.soc-networks {
+  padding-top: 24px;
+  display: flex;
+}
+
+.soc-networks > a {
+  width: 30px;
+  height: 31px;
+  border: 1px solid #767e9e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1px;
+  margin-right: 7px;
+}
+
+.soc-networks > a:hover {
+  transform: scale(1.2);
+}
+
+.soc-networks>a>img {
+  width: 14px;
+  height: 14px;
 }

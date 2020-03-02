@@ -61,11 +61,6 @@ nav {
   height: 100%;
 }
 
-/* .header-navigation .header {
-   display: flex;
-} */
-
-
 .header-navigation .navigation {
   display: flex;
   justify-content: space-between;
@@ -155,7 +150,6 @@ nav {
   height: 6px;
   position: relative;
   background-color: #ea676b;
-  /* background-color: green; */
 }
 
 .services {
@@ -188,8 +182,6 @@ nav {
 .layout-3-column {
   display: flex;
   flex-wrap: wrap;
-  /* margin-left: -15px;
-  margin-right: -15px; */
   justify-content: space-between;
   margin-bottom: 30px;
 }

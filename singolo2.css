@@ -99,6 +99,7 @@ ul {
   padding-top: 19px;
   position: relative;
   overflow: hidden;
+  padding-bottom: 47px;
 }
 
 .item {
@@ -181,4 +182,10 @@ ul {
 .item-img12 {
   top: -61px;
   left: -36px;
+}
+
+.portfolio-underline {
+  height: 6px;
+  position: relative;
+  background-color: #313745;
 }

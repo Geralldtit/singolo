@@ -177,6 +177,7 @@ nav {
   line-height: 3rem;
   margin-bottom: 40px;
   font-weight: 300;
+  padding-top: 0px;
 }
 
 .layout-3-column {
@@ -610,9 +611,9 @@ h1, h2, h3 {
   letter-spacing: -0.16px;
 }
 
-.wrapper > p {
+.quote-description {
   letter-spacing: -0.222px;
-  padding-top: 21px;
+   padding-top: 21px;
   line-height: 30px;
   text-align: justify;
 }

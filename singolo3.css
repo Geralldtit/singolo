@@ -128,6 +128,15 @@ h1, h2, h3 {
   color: #f48c8f;
 }
 
+textarea {
+  padding-bottom: 2px;
+  margin: 0;
+}
+
+input[type="submit"] {
+  padding: 1px 6px;
+}
+
 .contacts-input.submit {
   width: 620px;
 }

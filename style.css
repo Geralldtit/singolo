@@ -234,7 +234,8 @@ nav {
   padding-top: 8px;
   text-align: justify;
   padding-right: 10px;
-
+  overflow: hidden;
+  height: 63px;
 }
 
 .tool-icon {
@@ -248,8 +249,6 @@ nav {
   background-color: #ffffff;
 
 }
-
-/*===============Sinpolo 1^ ================*/
 
 .portfolio {
   background-color: #2d303a;
@@ -458,10 +457,6 @@ nav {
   background-color: #ffffff;
 }
 
-.layer-3-tiles > .box > h3 {
-  white-space: nowrap;
-}
-
 .layer-3-tiles > .box {
   width: 300px;
 }
@@ -480,6 +475,9 @@ nav {
   text-align: left;
   padding-top: 13px;
   letter-spacing: -0.19px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .box > p {
@@ -518,8 +516,6 @@ nav {
   width: 14px;
   height: 14px;
 }
-
-/*===============Sinpolo 2 ^ ================*/
 
 .quote {
   background-color: #f06c64;

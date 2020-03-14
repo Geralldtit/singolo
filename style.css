@@ -699,12 +699,6 @@ footer h4 {
   padding-bottom: 11px;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
-
 #message-block {
   position: fixed;
   width: 100vw;

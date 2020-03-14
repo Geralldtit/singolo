@@ -325,6 +325,7 @@ nav {
   height: 187px;
   margin-right: 20px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .item:nth-child(4n){
@@ -335,12 +336,18 @@ nav {
   display: none;
 }
 
+.selected-item {
+  border: 5px solid #F06C64;
+  width: 210px;
+  height: 177px;
+}
+
 .item img {
   position: absolute;
 }
 
 .item:hover{
-  box-shadow: 5px 5px 10px 5px #0d0e11;
+  box-shadow: 0px 7px 4px -3px #f7aaaa;
 }
 
 .item-img1 {

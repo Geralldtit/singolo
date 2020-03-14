@@ -289,18 +289,18 @@ nav {
   text-transform: capitalize;
 }
 
-.tags > li {
+.tags li {
   margin-right: 10px;
   border: solid 1px #666d89;
   border-radius: 5px;
   padding: 3px 6px;
 }
 
-.tags > li:hover {
+.tags li:hover {
   transform: scale(1.2);
 }
 
-.tags > li:first-child {
+.tags li.active {
   border-color: #c5c5c5;
   color: #dedede;
 }

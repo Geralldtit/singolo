@@ -12,8 +12,8 @@
     <div class="wrapper">
       <h1 class="logo"><a href="#">Singolo</a></h1>
       <nav class="header-navigation">
-        <ul class="navigation">
-          <li><a href="#">Home</a></li>
+        <ul class="navigation" id="menu">
+          <li class="active"><a href="#">Home</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">About</a></li>
@@ -209,12 +209,12 @@
           Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="layer-2-column">
           <div class="first-column">
-            <form action="post">
+            <form id="quote-form" action="post" onsubmit="return false;">
               <input type="text" name="name" required placeholder="Name (Required)" class="contacts-input">
               <input type="email" name="email" required placeholder="Email (Required)" class="contacts-input">
-              <input type="text" name="subject" placeholder="Subject" class="contacts-input">
-              <textarea name="project-description" placeholder="Describe your project in detail..." class="contacts-textarea"></textarea>
-              <input type="submit" value="Submit" placeholder="Submit" class="contacts-input submit">
+              <input type="text" id="subject" name="subject" placeholder="Subject" class="contacts-input">
+              <textarea id="describe" name="project-description" placeholder="Describe your project in detail..." class="contacts-textarea"></textarea>
+              <input type="submit" id="send-btn" placeholder="Submit" class="contacts-input submit">
             </form>
           </div>
           <div class="second-column">
@@ -227,6 +227,14 @@
                 <p class="phone-number"><a href="tel:035283318635" title="Phone number">03528 331 86 35</a></p>
                 <p class="our-email"><a href="mailto:info@singolo.com">info@singolo.com</a></p>
               </div>
+          </div>
+        </div>
+        <div id="message-block" class="hidden">
+          <div id="message">
+            <p>Письмо отправлено</p><hr>
+            <span id="result-subject"></span><br>
+            <span id="result-describe"></span><br>
+            <input type="button" id="close-btn" value="Close">
           </div>
         </div>
       </div>
@@ -244,5 +252,6 @@
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

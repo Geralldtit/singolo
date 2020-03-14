@@ -49,6 +49,7 @@ header {
   height: 89px;
   background-color: #2d303a;
   margin-bottom: 6px;
+  z-index: 100;
 }
 
 .header-underline {
@@ -101,7 +102,7 @@ nav {
   text-transform: uppercase;
 }
 
-.navigation li:first-child a {
+.navigation li.active a {
   color: #f06c64;
 }
 
@@ -538,9 +539,10 @@ nav {
   letter-spacing: -0.16px;
 }
 
-.quote-description {
+.quote-description,
+#message-block {
   letter-spacing: -0.222px;
-   padding-top: 21px;
+  padding-top: 21px;
   line-height: 30px;
   text-align: justify;
 }
@@ -695,4 +697,37 @@ footer h4 {
   padding-left: 3px;
   padding-top: 11px;
   padding-bottom: 11px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+#message-block {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #0008;
+  z-index: 110;
+}
+
+#message-block.hidden {
+  display: none;
+}
+
+#message {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  text-align: center;
+  background: #ea676b;
+  padding: 30px;
+  border-radius: 22px;
+  width: 30%;
+  max-height: 50%;
+  overflow: hidden auto;
 }

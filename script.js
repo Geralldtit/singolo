@@ -35,12 +35,16 @@ portfolioItems.addEventListener('click', (event) => {
 })
 
 /*============================== Quote ==============================*/
+
 sendBtn.addEventListener('click', () => {
-  const subject = document.getElementById('subject').value.toString();
-  const describe = document.getElementById('describe').value.toString();
-  document.getElementById('result-subject').innerText = subject == "" ? "Без темы" : "Тема: " + subject;
-  document.getElementById('result-describe').innerText = describe == "" ? "Без описания" : "Описание: " + describe;
-  document.getElementById('message-block').classList.remove('hidden');
+  if(document.getElementById('inputName').checkValidity() &&
+      document.getElementById('inputEmail').checkValidity()) {
+        const subject = document.getElementById('inputSubject').value.toString();
+        const describe = document.getElementById('describe').value.toString();
+        document.getElementById('result-subject').innerText = subject == "" ? "Без темы" : "Тема: " + subject;
+        document.getElementById('result-describe').innerText = describe == "" ? "Без описания" : "Описание: " + describe;
+        document.getElementById('message-block').classList.remove('hidden');
+    }
 });
 
 closeBtn.addEventListener('click', (event) => {

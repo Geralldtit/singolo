@@ -8,13 +8,13 @@ const portfolioItems = document.getElementById('items');
 /*============================== Header ==============================*/
 menu.addEventListener('click', (event) => {
   menu.querySelectorAll('li').forEach(element => element.classList.remove('active'));
-  event.target.parentNode.classList.add('active');
+  event.target.closest('li').classList.add('active');
 });
 
 /*============================== Porfolio ==============================*/
 tags.addEventListener('click', (event) => {
   tags.querySelectorAll('li').forEach(element => element.classList.remove('active'));
-  event.target.parentNode.classList.add('active');
+  event.target.closest('li').classList.add('active');
   swapTwoElements();
 });
 

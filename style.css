@@ -138,6 +138,10 @@ nav {
   overflow: hidden;
   display: flex;
 }
+.first-slider-container {
+  position: relative;
+  width: 1020px;
+}
 
 .slider .slide {
   position: relative;
@@ -162,8 +166,13 @@ nav {
   z-index: 100;
 }
 
-.phone-vertical {
+.phone-vertical,
+.phone-horizontal  {
   position: absolute;
+  cursor: pointer;
+}
+
+.phone-vertical {
   top: 53px;
   left: 112px;
   width: 240px;
@@ -171,11 +180,36 @@ nav {
 }
 
 .phone-horizontal {
-  position: absolute;
   top: 174px;
   right: 111px;
   width: 483px;
   height: 240px;
+}
+
+.vertical-black-screen,
+.horizontal-black-screen {
+  display: none;
+  position: absolute;
+  background-color: black;
+  cursor: pointer;
+}
+
+.vertical-black-screen {
+  top: 118px;
+  left: 126px;
+  width: 188px;
+  height: 334px;
+}
+
+.horizontal-black-screen {
+  top: 188px;
+  right: 202px;
+  width: 332px;
+  height: 188px;
+}
+
+.visible {
+  display: block;
 }
 
 .next {

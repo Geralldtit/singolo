@@ -6,6 +6,8 @@ const form = document.getElementById('quote-form');
 const portfolioItems = document.getElementById('items');
 const prevBtn = document.getElementById('btn-prev');
 const nextBtn = document.getElementById('btn-next');
+const verticalPhone = document.querySelectorAll('.vertical');
+const horizontalPhone = document.querySelectorAll('.horizontal');
 
 /*============================== Header ==============================*/
 menu.addEventListener('click', (event) => {
@@ -54,6 +56,18 @@ function swapTwoSlides(offset){
     slides.forEach( (item) => {item.style.left=offset;})
   }
 }
+
+verticalPhone.forEach((i) => {
+  i.addEventListener('click', (event) => {
+    document.getElementById('vertical-black-screen').classList.toggle('visible');
+  });
+});
+
+horizontalPhone.forEach((i) => {
+  i.addEventListener('click', (event) => {
+    document.getElementById('horizontal-black-screen').classList.toggle('visible');
+  });
+});
 
 /*============================== Porfolio ==============================*/
 tags.addEventListener('click', (event) => {

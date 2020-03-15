@@ -26,10 +26,16 @@
   <main class="main">
     <section class="slider">
       <div class="wrapper">
-        <a href="#" class="btn-prev"><img class="prev" src="./assets/img/prev.png" alt="Previos slide"></a>
-        <img class="phone-vertical" src="./assets/img/phone-vertical.png" alt="phone vertical" >
-        <img class="phone-horizontal" src="./assets/img/phone-horizontal.png" alt="phone horizontal">
-        <a href="#" class="btn-next"><img class="next" src="./assets/img/next.png" alt="Next slide"></a>
+        <a href="#" id="btn-prev" class="btn-prev"><img class="prev" src="./assets/img/prev.png" alt="Previos slide"></a>
+        <div class="slider-container">
+          <div class="slide">
+            <img src="./assets/img/Slide-1.jpg" alt="phones" class="phones">
+          </div>
+          <div class="slide">
+            <img src="./assets/img/Slide-2.jpg" alt="phones" class="phones">
+          </div>
+       </div>
+        <a href="#" id="btn-next" class="btn-next"><img class="next" src="./assets/img/next.png" alt="Next slide"></a>
       </div>
       <div class="slider-underline"></div>
     </section>
@@ -204,9 +210,9 @@
         <div class="layer-2-column">
           <div class="first-column">
             <form id="quote-form" action="post" onsubmit="return false;">
-              <input id="inputName" type="text" name="name" required placeholder="Name (Required)" class="contacts-input">
-              <input id="inputEmail" type="email" name="email" required placeholder="Email (Required)" class="contacts-input">
-              <input id="inputSubject" type="text" name="subject" placeholder="Subject" class="contacts-input">
+              <input id="name" type="text" name="name" required placeholder="Name (Required)" class="contacts-input">
+              <input id="email" type="email" name="email" required placeholder="Email (Required)" class="contacts-input">
+              <input id="subject" type="text" name="subject" placeholder="Subject" class="contacts-input">
               <textarea id="describe" name="project-description" placeholder="Describe your project in detail..." class="contacts-textarea"></textarea>
               <input type="submit" id="send-btn" placeholder="Submit" class="contacts-input submit">
             </form>

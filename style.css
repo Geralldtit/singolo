@@ -169,7 +169,6 @@ nav {
 .phone-vertical,
 .phone-horizontal  {
   position: absolute;
-  cursor: pointer;
 }
 
 .phone-vertical {
@@ -191,7 +190,6 @@ nav {
   display: none;
   position: absolute;
   background-color: black;
-  cursor: pointer;
 }
 
 .vertical-black-screen {
@@ -210,6 +208,28 @@ nav {
 
 .visible {
   display: block;
+}
+
+#vertical-phone-btn,
+#horizontal-phone-btn {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 110;
+}
+
+#vertical-phone-btn {
+  width: 42px;
+  height: 42px;
+  top: 462px;
+  left: 199px;
+}
+
+#horizontal-phone-btn {
+  width: 42px;
+  height: 42px;
+  top: 261px;
+  left: 435px;
 }
 
 .next {

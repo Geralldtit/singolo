@@ -6,8 +6,8 @@ const form = document.getElementById('quote-form');
 const portfolioItems = document.getElementById('items');
 const prevBtn = document.getElementById('btn-prev');
 const nextBtn = document.getElementById('btn-next');
-const verticalPhone = document.querySelectorAll('.vertical');
-const horizontalPhone = document.querySelectorAll('.horizontal');
+const verticalPhone = document.getElementById('vertical-phone-btn');
+const horizontalPhone = document.getElementById('horizontal-phone-btn');
 
 /*============================== Header ==============================*/
 menu.addEventListener('click', (event) => {
@@ -33,12 +33,13 @@ prevBtn.addEventListener('click', () =>{
 });
 
 nextBtn.addEventListener('click', () =>{
-   swapTwoSlides('-1020px');
+  swapTwoSlides('-1020px');
   let counter = -1020;
   let interval = setInterval(() => {
     document.querySelectorAll('.slide').forEach( (item) => {
       if(item.style.left === '0px'){
         clearInterval(interval);
+        clearSlidesPosition();
         return;
       }else {
         counter += 10;
@@ -57,16 +58,17 @@ function swapTwoSlides(offset){
   }
 }
 
-verticalPhone.forEach((i) => {
-  i.addEventListener('click', (event) => {
-    document.getElementById('vertical-black-screen').classList.toggle('visible');
-  });
+function clearSlidesPosition(){
+  let slides = document.querySelectorAll('.slide');
+  slides.forEach( (item) => {item.style.left='0px';})
+}
+
+verticalPhone.addEventListener('click', () => {
+  document.getElementById('vertical-black-screen').classList.toggle('visible');
 });
 
-horizontalPhone.forEach((i) => {
-  i.addEventListener('click', (event) => {
-    document.getElementById('horizontal-black-screen').classList.toggle('visible');
-  });
+horizontalPhone.addEventListener('click', () => {
+  document.getElementById('horizontal-black-screen').classList.toggle('visible');
 });
 
 /*============================== Porfolio ==============================*/

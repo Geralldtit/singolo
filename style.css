@@ -797,11 +797,12 @@ footer h4 {
   position: absolute;
   top: 25%;
   left: 30%;
-  text-align: center;
+  text-align: left;
   background: #ea676b;
   padding: 30px;
   border-radius: 22px;
   width: 30%;
   max-height: 50%;
   overflow: hidden auto;
+  word-wrap: break-word;
 }

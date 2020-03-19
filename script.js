@@ -110,4 +110,5 @@ sendBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', (event) => {
   document.getElementById('result-subject').innerText = document.getElementById('result-describe').innerText = "";
   document.getElementById('message-block').classList.add('hidden');
+  document.getElementById('quote-form').reset();
 });

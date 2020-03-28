@@ -150,7 +150,7 @@ nav {
 }
 
 .first-slider-container {
-  width: 1020px;
+  width: 940px;
   position: relative;
 }
 
@@ -173,7 +173,7 @@ nav {
   position: absolute;
   width: 16px;
   height: 27px;
-  top: 281px;
+  top: 375px;
   left: 42px;
   z-index: 100;
 }
@@ -185,14 +185,14 @@ nav {
 
 .phone-vertical {
   top: 53px;
-  left: 112px;
+  left: 72px;
   width: 240px;
   height: 484px;
 }
 
 .phone-horizontal {
   top: 174px;
-  right: 111px;
+  right: 72px;
   width: 483px;
   height: 240px;
 }
@@ -206,14 +206,14 @@ nav {
 
 .vertical-black-screen {
   top: 118px;
-  left: 126px;
+  left: 86px;
   width: 188px;
   height: 334px;
 }
 
 .horizontal-black-screen {
   top: 188px;
-  right: 202px;
+  right: 163px;
   width: 332px;
   height: 188px;
 }
@@ -234,21 +234,21 @@ nav {
   width: 42px;
   height: 42px;
   top: 462px;
-  left: 199px;
+  left: 158px;
 }
 
 #horizontal-phone-btn {
   width: 42px;
   height: 42px;
   top: 261px;
-  left: 435px;
+  left: 394px;
 }
 
 .next {
   position: absolute;
   width: 16px;
   height: 27px;
-  top: 281px;
+  top: 375px;
   right: 40px;
   z-index: 100;
 }

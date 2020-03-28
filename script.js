@@ -8,6 +8,7 @@ const prevBtn = document.getElementById('btn-prev');
 const nextBtn = document.getElementById('btn-next');
 const verticalPhone = document.getElementById('vertical-phone-btn');
 const horizontalPhone = document.getElementById('horizontal-phone-btn');
+const slides = document.querySelectorAll('.slide');
 
 /*============================== Header ==============================*/
 
@@ -36,23 +37,25 @@ document.addEventListener("scroll", (function() {
 
 prevBtn.addEventListener('click', () =>{
   let counter = 0;
+  let slider = document.getElementById('home');
   let interval = setInterval(() => {
     document.querySelectorAll('.slide').forEach( (item) => {
-      if(item.style.left === '-1020px'){
+      if(item.style.left === '-940px'){
         clearInterval(interval);
         swapTwoSlides('');
         return;
       }else {
         counter -= 10;
         item.style.left = `${counter}px`;
+        // slider.style.backgroundColor = fadeColor();
       }
     });
   }, 10);
 });
 
 nextBtn.addEventListener('click', () =>{
-  swapTwoSlides('-1020px');
-  let counter = -1020;
+  swapTwoSlides('-940px');
+  let counter = -940;
   let interval = setInterval(() => {
     document.querySelectorAll('.slide').forEach( (item) => {
       if(item.style.left === '0px'){
@@ -75,6 +78,31 @@ function swapTwoSlides(offset){
     slides.forEach( (item) => {item.style.left=offset;})
   }
 }
+
+function fadeColor(){
+  let slides = document.querySelectorAll('.slide');
+  slides.forEach( (item) => {item.style.left='0px';})
+}
+
+
+// function fadeColor()
+// {
+//   /*процент содержания конечного цвета в текущем промежуточном цвете;
+//   изменяется от 0 (не включая 0) до 1 (1 = 100%)*/
+//   var finishPercent = i/n;
+//   /*процент содержания начального цвета в текущем промежуточном цвете;
+//   изменяется от 1 до 0 (1 = 100%) */
+//   var startPercent = 1 - finishPercent;
+
+//   var R,G,B;
+
+//   //вычисляем значения красного, зеленого, синего промежуточного цвета
+//   R = Math.floor( ('0x'+aRGBStart[0]) * startPercent + ('0x'+aRGBFinish[0]) * finishPercent );
+//   G = Math.floor( ('0x'+aRGBStart[1]) * startPercent + ('0x'+aRGBFinish[1]) * finishPercent );
+//   B = Math.floor( ('0x'+aRGBStart[2]) * startPercent + ('0x'+aRGBFinish[2]) * finishPercent );
+
+//   return 'rgb('+R+ ',' + G + ',' + B +')';
+// }
 
 function clearSlidesPosition(){
   let slides = document.querySelectorAll('.slide');

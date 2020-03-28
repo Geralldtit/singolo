@@ -10,12 +10,14 @@ const verticalPhone = document.getElementById('vertical-phone-btn');
 const horizontalPhone = document.getElementById('horizontal-phone-btn');
 
 /*============================== Header ==============================*/
+
 menu.addEventListener('click', (event) => {
   menu.querySelectorAll('li').forEach(element => element.classList.remove('active'));
   event.target.closest('li').classList.add('active');
 });
 
 /*============================== Slider ================================*/
+
 prevBtn.addEventListener('click', () =>{
   let counter = 0;
   let interval = setInterval(() => {
@@ -72,6 +74,7 @@ horizontalPhone.addEventListener('click', () => {
 });
 
 /*============================== Porfolio ==============================*/
+
 tags.addEventListener('click', (event) => {
   tags.querySelectorAll('li').forEach(element => element.classList.remove('active'));
   event.target.closest('li').classList.add('active');

@@ -37,6 +37,13 @@ h1, h2, h3 {
   margin-block-end: 0;
 }
 
+#services,
+#portfolio,
+#about,
+#contact {
+  scroll-margin-top: 95px;
+}
+
 .wrapper {
   display: flex;
   width: 940px;
@@ -51,6 +58,7 @@ header {
   background-color: #2d303a;
   margin-bottom: 6px;
   z-index: 100;
+  position: fixed;
 }
 
 .header-underline {
@@ -124,13 +132,14 @@ nav {
 
 .slider {
   width: 100%;
-  height: 594px;
+  height: 689px;
   background-color: #f06c64;
   margin-bottom: 6px;
 }
 
 .slider > .wrapper {
   position: relative;
+  padding-top: 95px;
 }
 
 .slider-container {
@@ -248,6 +257,7 @@ nav {
   height: 6px;
   position: relative;
   background-color: #ea676b;
+  top: -95px;
 }
 
 .services {

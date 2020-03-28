@@ -16,6 +16,22 @@ menu.addEventListener('click', (event) => {
   event.target.closest('li').classList.add('active');
 });
 
+document.addEventListener("scroll", (function() {
+  const curPos = window.scrollY,
+        sect = document.querySelectorAll("main > section"),
+        links = menu.querySelectorAll('li a');
+  sect.forEach((function(sect) {
+    if( (sect.offsetTop <= curPos + 95) && (sect.offsetTop + sect.offsetHeight) > (curPos + 95) ){
+      links.forEach(function(a) {
+        a.parentNode.classList.remove('active');
+        if(sect.getAttribute('id') === a.getAttribute('href').substring(1)){
+          a.parentNode.classList.add('active');
+        }
+      })
+    }
+  }))
+}));
+
 /*============================== Slider ================================*/
 
 prevBtn.addEventListener('click', () =>{
@@ -83,7 +99,7 @@ tags.addEventListener('click', (event) => {
 
 function swapTwoElements(){
   let items = document.getElementsByClassName('item');
-  let randomElement = randomInteger(0, items.length);
+  let randomElement = randomInteger(1, items.length);
   items[randomElement].parentNode.insertBefore(items[randomElement], items[0]);
 }
 

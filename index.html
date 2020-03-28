@@ -216,7 +216,7 @@
           Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="layer-2-column">
           <div class="first-column">
-            <form id="quote-form" action="post" onsubmit="return false;">
+            <form id="quote-form" action="post" onsubmit="event.preventDefault();">
               <input id="name" type="text" name="name" required placeholder="Name (Required)" class="contacts-input">
               <input id="email" type="email" name="email" required placeholder="Email (Required)" class="contacts-input">
               <input id="subject" type="text" name="subject" placeholder="Subject" class="contacts-input">

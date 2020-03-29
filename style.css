@@ -859,11 +859,11 @@ footer h4 {
 
   .contacts-input,
   .contacts-textarea {
-    width: 100%;
+    width: 95%;
   }
 
   .contacts-input.submit {
-    width: 100%;
+    width: 98%;
   }
 
   .second-column {
@@ -892,6 +892,19 @@ footer h4 {
     height: 100%;
     top: 0;
     left: 0;
+  }
+
+  footer .wrapper {
+    height: 76px;
+  }
+
+  footer h4{
+    display: none;
+  }
+
+  .footer.soc-networks {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1002,6 +1015,18 @@ footer h4 {
     flex: 1 0 51%;
     margin-bottom: 10%;
   }
+
+  .layer-2-column {
+    flex-direction: column;
+  }
+
+  .first-column {
+    width: 100%;
+  }
+
+  .second-column {
+    width: 95%;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1023,3 +1048,9 @@ footer h4 {
     margin: 7px;
   }
 }
+
+/* @media(hover:hover){
+  .navigation li a:hover {
+    color: #f06c64;
+  }
+} */

@@ -839,6 +839,48 @@ footer h4 {
     width: auto;
   }
 
+  .slider {
+    height: calc(70vw);
+  }
+
+  #second-slide {
+    width: 100%;
+    transform: translateX(200%);
+  }
+
+  .slider-container {
+    display: block;
+  }
+
+  .phone-vertical {
+    width: 25%;
+    height: calc(44vw);
+    top: calc(3vw);
+    left: calc(6vw);
+  }
+
+  .phone-horizontal {
+    width: 51%;
+    height: calc(24vw);
+    top: calc(13vw);
+    right: calc(6vw);
+  }
+
+  .prev,
+  .next {
+    top: calc(40vw);
+  }
+
+  .prev {
+    left: 30px;
+  }
+
+  .next {
+    right: 30px;
+  }
+
+
+
   .item-service {
     margin: 0 7% 7% 0;
     flex: 1 0 36%;
@@ -1042,6 +1084,13 @@ footer h4 {
 
   .slider-container {
     top: -18px;
+  }
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
   }
 
   .wrapper {

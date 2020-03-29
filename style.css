@@ -383,6 +383,7 @@ nav {
 
 .tags li:hover {
   transform: scale(1.2);
+  cursor: pointer;
 }
 
 .tags li.active {
@@ -425,9 +426,9 @@ nav {
 }
 
 .selected-item {
-  border: 5px solid #F06C64;
-  width: 210px;
-  height: 177px;
+  outline: 5px solid #F06C64;
+  /* width: 210px;
+  height: 177px; */
 }
 
 .item img {
@@ -899,6 +900,16 @@ footer h4 {
 
   .item:nth-child(n+9) {
     display: none;
+  }
+
+  .layer-3-tiles {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .layer-3-tiles > .box {
+    flex: 1 0 51%;
+    margin-bottom: 10%;
   }
 }
 

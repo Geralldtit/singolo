@@ -1,3 +1,5 @@
+const hamburger = document.getElementById('hamburger');
+const menuSmall = document.getElementById('menu-small');
 const menu = document.getElementById('menu');
 const tags = document.getElementById('tags');
 const sendBtn = document.getElementById('send-btn');
@@ -13,6 +15,14 @@ var timerId;
 
 /*============================== Header ==============================*/
 
+hamburger.addEventListener('click', toggleHamburger);
+menuSmall.addEventListener('click', toggleHamburger);
+
+function toggleHamburger(){
+  hamburger.classList.toggle('rotated');
+  document.getElementById('menu-small').classList.toggle('invisible');
+}
+
 menu.addEventListener('click', (event) => {
   menu.querySelectorAll('li').forEach(element => element.classList.remove('active'));
   event.target.closest('li').classList.add('active');
@@ -21,7 +31,7 @@ menu.addEventListener('click', (event) => {
 document.addEventListener("scroll", (function() {
   const curPos = window.scrollY,
         sect = document.querySelectorAll("main > section"),
-        links = menu.querySelectorAll('li a');
+        links = document.querySelectorAll('header li a');
   sect.forEach((function(sect) {
     if( (sect.offsetTop <= curPos + 95) && (sect.offsetTop + sect.offsetHeight) > (curPos + 95) ){
       links.forEach(function(a) {

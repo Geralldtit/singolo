@@ -1026,6 +1026,11 @@ footer h4 {
 
   .second-column {
     width: 95%;
+    padding-left: 0;
+  }
+
+  .contacts {
+    padding-bottom: 35px;
   }
 }
 
@@ -1046,6 +1051,10 @@ footer h4 {
   .item {
     flex: 1 0 32%;
     margin: 7px;
+  }
+
+  .contacts-input.submit {
+    width: 100%;
   }
 }
 

@@ -8,32 +8,61 @@
   <title>Singpolo</title>
 </head>
 <body>
-  <header class="header">
+  <header id="header" class="header">
     <div class="wrapper">
+      <div id="hamburger" class="hamburger">
+        <span class="hamburger-line first"></span>
+        <span class="hamburger-line second"></span>
+        <span class="hamburger-line third"></span>
+      </div>
       <h1 class="logo"><a href="#">Singolo</a></h1>
       <nav class="header-navigation">
-        <ul class="navigation">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul class="navigation" id="menu">
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
     <div class="header-underline"></div>
+    <nav id="menu-small" class="menu-small invisible">
+      <!-- <div class="opened-menu-small"></div> -->
+      <ul class="navigation navigation-small">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div id="overlay" class="overlay"></div>
+    </nav>
   </header>
   <main class="main">
-    <section class="slider">
+    <section id="home" class="slider">
       <div class="wrapper">
-        <a href="#" class="btn-prev"><img class="prev" src="./assets/img/prev.png" alt="Previos slide"></a>
-        <img class="phone-vertical" src="./assets/img/phone-vertical.png" alt="phone vertical" >
-        <img class="phone-horizontal" src="./assets/img/phone-horizontal.png" alt="phone horizontal">
-        <a href="#" class="btn-next"><img class="next" src="./assets/img/next.png" alt="Next slide"></a>
+        <a href="#" id="btn-prev" class="btn-prev"><img class="prev" src="./assets/img/prev.png" alt="Previos slide"></a>
+        <div class="slider-container">
+          <div class="slide">
+            <div class="first-slider-container">
+              <img class="phone-vertical vertical" src="./assets/img/phone-vertical.png" alt="phone vertical" >
+              <div id="vertical-black-screen" class="vertical-black-screen vertical"></div>
+              <div id="vertical-phone-btn"></div>
+              <img class="phone-horizontal horizontal" src="./assets/img/phone-horizontal.png" alt="phone horizontal">
+              <div id="horizontal-black-screen" class="horizontal-black-screen horizontal"></div>
+              <div id="horizontal-phone-btn"></div>
+            </div>
+          </div>
+          <div class="slide">
+            <img id="second-slide" src="./assets/img/Slide-2.jpg" alt="phones" class="phones">
+          </div>
+       </div>
+        <a href="#" id="btn-next" class="btn-next"><img class="next" src="./assets/img/next.png" alt="Next slide"></a>
       </div>
       <div class="slider-underline"></div>
     </section>
-    <section class="services">
+    <section id="services" class="services">
       <div class="wrapper">
         <h2 class="services-header">Our Services</h2>
         <p class="service-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
@@ -99,65 +128,59 @@
       </div>
       <div class="services-underline"></div>
     </section>
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
       <div class="wrapper">
         <h2 class="portfolio-header">Portfolio</h2>
         <p class="description">Duis mollis, est non commodo luctus, nisi erat
           porttitor ligula, eget lacinia odio sem nec elit.</p>
-          <ul class="tags">
-            <li><a href="#">all</a></li>
-            <li><a href="#">web design</a></li>
-            <li><a href="#">graphic design</a></li>
-            <li><a href="#">artwork</a></li>
+          <ul id="tags" class="tags">
+            <li class="active">all</li>
+            <li>web design</li>
+            <li>graphic design</li>
+            <li>artwork</li>
           </ul>
-          <div class="layout-4-column">
+          <div id="items" class="layout-4-column">
             <div class="item">
-              <a href="#"><img src="./assets/img/Project1.png" class="item-img1" alt=""></a>
+              <img src="./assets/img/Project1.png" class="item-img1" alt="">
             </div>
             <div class="item">
-              <a href="#"><img src="./assets/img/Project2.png" class="item-img2" alt=""></a>
+              <img src="./assets/img/Project2.png" class="item-img2" alt="">
             </div>
             <div class="item">
-              <a href="#"><img src="./assets/img/Project3.png" class="item-img3" alt=""></a>
+              <img src="./assets/img/Project3.png" class="item-img3" alt="">
             </div>
             <div class="item">
-              <a href="#"><img src="./assets/img/Project4.png" class="item-img4" alt=""></a>
+              <img src="./assets/img/Project4.png" class="item-img4" alt="">
             </div>
             <div class="item">
-              <a href="#"><img src="./assets/img/Project5.png" class="item-img5" alt=""></a>
+              <img src="./assets/img/Project5.png" class="item-img5" alt="">
             </div>
             <div class="item">
-              <a href="#"><img src="./assets/img/Project6.png" class="item-img6" alt=""></a>
+              <img src="./assets/img/Project6.png" class="item-img6" alt="">
             </div>
             <div class="item">
-              <a href="#"><img src="./assets/img/Project7.png" class="item-img7" alt=""></a>
+              <img src="./assets/img/Project7.png" class="item-img7" alt="">
             </div>
             <div class="item">
-              <a href="#"><img src="./assets/img/Project8.png" class="item-img8" alt=""></a>
+              <img src="./assets/img/Project8.png" class="item-img8" alt="">
             </div>
             <div class="item">
-              <a href="#"><img src="./assets/img/Project9.png" class="item-img9" alt=""></a>
+              <img src="./assets/img/Project9.png" class="item-img9" alt="">
             </div>
             <div class="item">
-              <a href="#"><img src="./assets/img/Project10.png" class="item-img10" alt=""></a>
+              <img src="./assets/img/Project10.png" class="item-img10" alt="">
             </div>
             <div class="item">
-              <a href="#"><img src="./assets/img/Project11.png" class="item-img11" alt=""></a>
+              <img src="./assets/img/Project11.png" class="item-img11" alt="">
             </div>
             <div class="item">
-              <a href="#"><img src="./assets/img/Project12.png" class="item-img12" alt=""></a>
-            </div>
-            <div class="item">
-              <a href="#"><img src="./assets/img/Project12.png" class="item-img12" alt=""></a>
-            </div>
-            <div class="item">
-              <a href="#"><img src="./assets/img/Project12.png" class="item-img12" alt=""></a>
+              <img src="./assets/img/Project12.png" class="item-img12" alt="">
             </div>
           </div>
       </div>
       <div class="portfolio-underline"></div>
     </section>
-    <section class="about-us">
+    <section id="about" class="about-us">
       <div class="wrapper">
         <h2 class="about-us-header">About Us</h2>
         <p class="about-us-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
@@ -169,10 +192,10 @@
             <h3>Adam Jensen</h3>
             <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
             <div class="soc-networks">
-              <a href="#"><img src="./assets/img/ico-facebook.svg" alt="Facebook" class="ico-facebook"></a>
-              <a href="#"><img src="./assets/img/ico-google-plus.svg" alt="Google Plus" class="ico-google-plus"></a>
-              <a href="#"><img src="./assets/img/ico-twitter.svg" alt="Twitter" class="ico-twitter"></a>
-              <a href="#"><img src="./assets/img/ico-linkedin.svg" alt="LinkedIn" class="ico-linkedin"></a>
+              <a href=""><img src="./assets/img/ico-facebook.svg" alt="Facebook" class="ico-facebook"></a>
+              <a href=""><img src="./assets/img/ico-google-plus.svg" alt="Google Plus" class="ico-google-plus"></a>
+              <a href=""><img src="./assets/img/ico-twitter.svg" alt="Twitter" class="ico-twitter"></a>
+              <a href=""><img src="./assets/img/ico-linkedin.svg" alt="LinkedIn" class="ico-linkedin"></a>
             </div>
           </div>
           <div class="box">
@@ -180,10 +203,10 @@
             <h3>Desmond Miles</h3>
             <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
             <div class="soc-networks">
-              <a href="#"><img src="./assets/img/ico-facebook.svg" alt="Facebook" class="ico-facebook"></a>
-              <a href="#"><img src="./assets/img/ico-google-plus.svg" alt="Google Plus" class="ico-google-plus"></a>
-              <a href="#"><img src="./assets/img/ico-twitter.svg" alt="Twitter" class="ico-twitter"></a>
-              <a href="#"><img src="./assets/img/ico-linkedin.svg" alt="LinkedIn" class="ico-linkedin"></a>
+              <a href=""><img src="./assets/img/ico-facebook.svg" alt="Facebook" class="ico-facebook"></a>
+              <a href=""><img src="./assets/img/ico-google-plus.svg" alt="Google Plus" class="ico-google-plus"></a>
+              <a href=""><img src="./assets/img/ico-twitter.svg" alt="Twitter" class="ico-twitter"></a>
+              <a href=""><img src="./assets/img/ico-linkedin.svg" alt="LinkedIn" class="ico-linkedin"></a>
             </div>
           </div>
           <div class="box">
@@ -191,17 +214,17 @@
             <h3>Scolara Visari</h3>
             <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
             <div class="soc-networks">
-              <a href="#"><img src="./assets/img/ico-facebook.svg" alt="Facebook" class="ico-facebook"></a>
-              <a href="#"><img src="./assets/img/ico-google-plus.svg" alt="Google Plus" class="ico-google-plus"></a>
-              <a href="#"><img src="./assets/img/ico-twitter.svg" alt="Twitter" class="ico-twitter"></a>
-              <a href="#"><img src="./assets/img/ico-linkedin.svg" alt="LinkedIn" class="ico-linkedin"></a>
+              <a href=""><img src="./assets/img/ico-facebook.svg" alt="Facebook" class="ico-facebook"></a>
+              <a href=""><img src="./assets/img/ico-google-plus.svg" alt="Google Plus" class="ico-google-plus"></a>
+              <a href=""><img src="./assets/img/ico-twitter.svg" alt="Twitter" class="ico-twitter"></a>
+              <a href=""><img src="./assets/img/ico-linkedin.svg" alt="LinkedIn" class="ico-linkedin"></a>
             </div>
           </div>
         </div>
       </div>
       <div class="about-us-underline"></div>
     </section>
-    <section class="quote">
+    <section id="contact" class="quote">
       <div class="wrapper">
         <h2 class="quote-header">Get a Quote</h2>
         <p class="quote-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
@@ -209,12 +232,12 @@
           Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="layer-2-column">
           <div class="first-column">
-            <form action="post">
-              <input type="text" name="name" required placeholder="Name (Required)" class="contacts-input">
-              <input type="email" name="email" required placeholder="Email (Required)" class="contacts-input">
-              <input type="text" name="subject" placeholder="Subject" class="contacts-input">
-              <textarea name="project-description" placeholder="Describe your project in detail..." class="contacts-textarea"></textarea>
-              <input type="submit" value="Submit" placeholder="Submit" class="contacts-input submit">
+            <form id="quote-form" action="post" onsubmit="event.preventDefault();">
+              <input id="name" type="text" name="name" required placeholder="Name (Required)" class="contacts-input">
+              <input id="email" type="email" name="email" required placeholder="Email (Required)" class="contacts-input">
+              <input id="subject" type="text" name="subject" placeholder="Subject" class="contacts-input">
+              <textarea id="describe" name="project-description" placeholder="Describe your project in detail..." class="contacts-textarea"></textarea>
+              <input type="submit" id="send-btn" placeholder="Submit" class="contacts-input submit">
             </form>
           </div>
           <div class="second-column">
@@ -229,6 +252,14 @@
               </div>
           </div>
         </div>
+        <div id="message-block" class="hidden">
+          <div id="message">
+            <p>Письмо отправлено</p><hr>
+            <span id="result-subject"></span><br>
+            <span id="result-describe"></span><br>
+            <input type="button" id="close-btn" value="Close">
+          </div>
+        </div>
       </div>
       <div class="quote-underline"></div>
     </section>
@@ -237,12 +268,13 @@
     <div class="wrapper">
       <h4 class="footer-copyright">&copy;Copyright 2013</h4>
       <div class="footer soc-networks">
-        <a href="#"><img src="./assets/img/ico-facebook.svg" alt="Facebook" class="ico-facebook"></a>
-        <a href="#"><img src="./assets/img/ico-google-plus.svg" alt="Google Plus" class="ico-google-plus"></a>
-        <a href="#"><img src="./assets/img/ico-twitter.svg" alt="Twitter" class="ico-twitter"></a>
-        <a href="#"><img src="./assets/img/ico-linkedin.svg" alt="LinkedIn" class="ico-linkedin"></a>
+        <a href=""><img src="./assets/img/ico-facebook.svg" alt="Facebook" class="ico-facebook"></a>
+        <a href=""><img src="./assets/img/ico-google-plus.svg" alt="Google Plus" class="ico-google-plus"></a>
+        <a href=""><img src="./assets/img/ico-twitter.svg" alt="Twitter" class="ico-twitter"></a>
+        <a href=""><img src="./assets/img/ico-linkedin.svg" alt="LinkedIn" class="ico-linkedin"></a>
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
